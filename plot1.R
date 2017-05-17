@@ -19,4 +19,5 @@ df$Sub_metering_3 <- as.numeric(as.character(df$Sub_metering_3))
 
 hist(df$Global_active_power, col = "red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 
-
+dev.copy(png, file="plot1.png", width=480, height=480)
+dev.off()
