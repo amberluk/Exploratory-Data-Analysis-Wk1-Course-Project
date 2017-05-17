@@ -26,7 +26,8 @@ legend("topright", lty= 1, col = c("Black", "red", "blue"), legend = c( "Sub_met
 plot(df$timestamp, df$Voltage, type="l", xlab="datetime", ylab="Voltage")
 plot(df$timestamp, df$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
-
+dev.copy(png, file="plot4.png", width=480, height=480)
+dev.off()
 
 
 
