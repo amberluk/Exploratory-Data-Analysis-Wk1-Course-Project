@@ -17,7 +17,7 @@ df$Sub_metering_1 <- as.numeric(as.character(df$Sub_metering_1))
 df$Sub_metering_2 <- as.numeric(as.character(df$Sub_metering_2))
 df$Sub_metering_3 <- as.numeric(as.character(df$Sub_metering_3))
 
-par(mfrow=c(2,2))
+par(mfcol=c(2,2))
 plot(df$timestamp, df$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 plot(df$timestamp, df$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(df$timestamp, df$Sub_metering_2, type="l", col="red")
