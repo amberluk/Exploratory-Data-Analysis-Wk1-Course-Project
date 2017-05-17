@@ -19,6 +19,7 @@ df$Sub_metering_3 <- as.numeric(as.character(df$Sub_metering_3))
 
 plot(df$timestamp, df$Global_active_power, type = "l", xlab="", ylab = "Global Active Power (kilowatts)")
 
-
+dev.copy(png, file="plot2.png", width=480, height=480)
+dev.off()
 
 
